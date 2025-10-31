@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+<style>
+ /* CONTACT SECTION------------------------- */
+
+.imgholder {
+  position: relative;
+}
+
+.imgholder img {
+  width: auto;
+  height: 360px;
+  position: absolute;
+  top: 190px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.imgholder img:first-child {
+  left: 80px; /* Left image */
+}
+
+.imgholder img:last-child {
+  right: 80px; /* Right image */
+}
+
+.contact-section {
+  background-color: #e7d8c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  color: #2b150b;
+  margin: 0;
+}
+
+.contact-section p {
+  color: #4c2a17;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  max-width: 600px;
+  z-index: 3;
+  position: relative;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 950px;
+  margin: 0 auto 25px;
+}
+
+.contact-form label {
+  background-color: #3b1d0f;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.contact-form input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 250px;
+  color: #3b1d0f;
+  background-color: white;
+}
+
+.contact-form button {
+  background-color: #3b1d0f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #5c2f19;
+}
+
+.icons-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icons-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.icons-nav img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Responsive fix */
+@media (max-width: 900px) {
+  .imgholder img {
+    position: static;
+    transform: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="imgholder">
+    <img src="contact-img-1.png" alt="">
+    <img src="contact-img.png" alt="">
+</div>
+ <!-- contaoct -->
+<section class="contact-section">
+
+  <div class="contact-content">
+    <h2>Contact Us</h2>
+    <p>Drop us a message and we'll get back to you soon.</p>
+
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Name">
+
+      <input type="email" id="email" placeholder="Email address">
+
+      <input type="tel" id="phone" placeholder="Phone Number">
+
+      <input type="text" placeholder="Send Message">
+
+      <div class="form-buttons">
+        <button type="button">Subscribe</button>
+        <button type="submit">Message</button>
+      </div>
+    </form>
+
+    <nav class="icons-nav">
+      <ul>
+        <li><img src="Facebook.png" alt="Facebook"></li>
+        <li><img src="Instagram.png" alt="Instagram"></li>
+        <li><img src="TikTok.png" alt="TikTok"></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+</body>
+</html>
